@@ -125,7 +125,13 @@
         'source': 'bikeshare_data',
         'type': 'circle',
         'paint': {
-            'circle-radius': 9,
+            'circle-radius': {
+                'base': 7,
+                'stops': [
+                  [16, 9],
+                  [22, 18]
+                ]
+             },
             'circle-color': [
               'match',
               ['get', 'Charging'],
